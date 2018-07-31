@@ -2,6 +2,11 @@ package train_001;
 
 public class PrimitiveTypeTest {
 
+	public PrimitiveTypeTest() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public static void main(String[] args) {
 		System.out.println("Primitive type test...");
 		byte b = 127;
