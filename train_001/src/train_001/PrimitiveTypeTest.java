@@ -6,7 +6,7 @@ public class PrimitiveTypeTest {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
+	public String name = "HKS";
 	public static void main(String[] args) {
 		System.out.println("Primitive type test...");
 		byte b = 127;
@@ -19,6 +19,9 @@ public class PrimitiveTypeTest {
 		double dlb = 89.34;
 		boolean bn = true;
 		char cr = 'C';
+		int a = 12;
+		System.out.println(a);
+		System.out.println(new PrimitiveTypeTest().name);
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("byte= ");
 		stringBuilder.append(b);
