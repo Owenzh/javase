@@ -2,7 +2,7 @@ package train_002;
 
 public class Code_01_sort {
 
-	public static void originalSort(int[] arr, boolean asc) {
+	public static void selectSort(int[] arr, boolean asc) {
 		int len = arr.length;
 		for (int i = 0; i < len - 1; i++) {
 			for (int j = i + 1; j < len; j++) {
@@ -48,9 +48,18 @@ public class Code_01_sort {
 		Code_01_sort.printArray(arr);
 	}
 
-	public static int[] quickSort(int[] arr, boolean asc) {
+	public static void quickSort(int[] arr, boolean asc) {
+		int len = arr.length;
+		int base = arr[0];
+		for (int i = 1; i < len; i++) {
+			if (base < arr[i]) {
+
+			} else {
+
+			}
+		}
+
 		Code_01_sort.printArray(arr);
-		return arr;
 	}
 
 	public static void printArray(int[] arr) {
@@ -69,8 +78,8 @@ public class Code_01_sort {
 		// TODO Auto-generated method stub
 		int[] a = { 100, 40, 60, 87, 34, 11, 56, 0 };
 		int[] b = { 100, 40, 60, 87, 34, 11, 56, 0 };
-		Code_01_sort.originalSort(a, true);
-		Code_01_sort.originalSort(a, false);
+		Code_01_sort.selectSort(a, true);
+		Code_01_sort.selectSort(a, false);
 		Code_01_sort.bubbleSort(b, true);
 		Code_01_sort.bubbleSort(b, false);
 
