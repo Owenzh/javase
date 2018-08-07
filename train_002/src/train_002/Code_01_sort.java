@@ -8,15 +8,21 @@ public class Code_01_sort {
 			for (int j = i + 1; j < len; j++) {
 				if (asc) {
 					if (arr[i] > arr[j]) {
-						int tmp = arr[i];
-						arr[i] = arr[j];
-						arr[j] = tmp;
+						// int tmp = arr[i];
+						// arr[i] = arr[j];
+						// arr[j] = tmp;
+						arr[i] = arr[i] ^ arr[j];
+						arr[j] = arr[i] ^ arr[j];
+						arr[i] = arr[i] ^ arr[j];
 					}
 				} else {
 					if (arr[i] < arr[j]) {
-						int tmp = arr[i];
-						arr[i] = arr[j];
-						arr[j] = tmp;
+						// int tmp = arr[i];
+						// arr[i] = arr[j];
+						// arr[j] = tmp;
+						arr[i] = arr[i] ^ arr[j];
+						arr[j] = arr[i] ^ arr[j];
+						arr[i] = arr[i] ^ arr[j];
 					}
 				}
 
@@ -31,15 +37,21 @@ public class Code_01_sort {
 			for (int j = 0; j < len - i - 1; j++) {
 				if (asc) {
 					if (arr[j] > arr[j + 1]) {
-						int tmp = arr[j];
-						arr[j] = arr[j + 1];
-						arr[j + 1] = tmp;
+						// int tmp = arr[j];
+						// arr[j] = arr[j + 1];
+						// arr[j + 1] = tmp;
+						arr[j + 1] = arr[j + 1] ^ arr[j];
+						arr[j] = arr[j + 1] ^ arr[j];
+						arr[j + 1] = arr[j + 1] ^ arr[j];
 					}
 				} else {
 					if (arr[j] < arr[j + 1]) {
-						int tmp = arr[j];
-						arr[j] = arr[j + 1];
-						arr[j + 1] = tmp;
+						// int tmp = arr[j];
+						// arr[j] = arr[j + 1];
+						// arr[j + 1] = tmp;
+						arr[j + 1] = arr[j + 1] ^ arr[j];
+						arr[j] = arr[j + 1] ^ arr[j];
+						arr[j + 1] = arr[j + 1] ^ arr[j];
 					}
 				}
 
